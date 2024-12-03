@@ -1,3 +1,4 @@
+// 단어와 링크를 담고 있는 객체
 const words = {
   A: { word: "Alejandra Iko Chuv", link: "https://www.livegore.com/203129/face-cut-in-half-still-alive" },
   B: { word: "Best Gore Fun", link: "https://www.bsetgore.fun" },
@@ -32,37 +33,27 @@ const words = {
   Z: { word: "Zebra", link: "https://example.com/zebra" }
 };
 
+// 사용자가 입력한 글자에 따라 관련 결과를 검색하고 표시하는 함수
 function searchByLetter(letter) {
   const searchResults = document.getElementById('search-results');
   searchResults.innerHTML = '';  // 검색 결과 초기화
 
-  // 모든 키를 순회하며 입력한 문자로 시작하는 항목 검색
+  // 모든 키를 순회하며 입력된 글자와 일치하거나 시작하는 키를 찾기
   Object.keys(words).forEach(key => {
-    if (key.startsWith(letter)) {
+    if (key.startsWith(letter)) {  // 입력된 글자가 키의 시작 부분과 일치하면
       const { word, link } = words[key];
       searchResults.innerHTML += `<a href="${link}" target="_blank">${word}</a><br/>`;
     }
   });
 
+  // 검색 결과가 없는 경우 메시지 출력
   if (searchResults.innerHTML === '') {
     searchResults.textContent = '검색 결과가 없습니다.';
   }
 }
 
+// 검색 입력을 처리하는 함수
 function searchWord() {
   const input = document.getElementById('searchInput').value.toUpperCase();
-  const searchResults = document.getElementById('search-results');
-  searchResults.innerHTML = '';  // 검색 결과 초기화
-
-  // 모든 키를 순회하며 입력한 단어로 시작하는 항목 검색
-  Object.keys(words).forEach(key => {
-    const { word, link } = words[key];
-    if (word.toUpperCase().startsWith(input)) {
-      searchResults.innerHTML += `<a href="${link}" target="_blank">${word}</a><br/>`;
-    }
-  });
-
-  if (searchResults.innerHTML === '') {
-    searchResults.textContent = '검색 결과가 없습니다.';
-  }
+  searchByLetter(input);
 }
