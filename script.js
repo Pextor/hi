@@ -10,38 +10,53 @@ const words = {
   G: { word: "Gleb Korablyov", link: "https://archive.org/details/0508_20240514" },
   G1: { word: "Google", link: "https://www.google.com" },
   H: { word: "Horse", link: "https://example.com/horse" },
-  // 나머지 단어 추가
+  I: { word: "Instagram", link: "https://www.instagram.com" },
+  J: { word: "Jaguar", link: "https://example.com/jaguar" },
+  K: { word: "Knife M", link: "https://www.youtube.com/redirect?event=backstage_event&redir_token=QUFFLUhqbndSTS1WLVl0YmNZYXdfc2puUmF5XzF3Vm9Gd3xBQ3Jtc0trczJPX090bm1PSnZBUGJQaV82U19zRmdpdEtvOVI3MVk4XzRObFpFTnk1S3JOa1pUc3Jib25ZamFNTE81NXN5RHllU0wxWVFSSTFkb2hiY3lJdnZuQXJGVWFMSXB1aFNGYm4yT0tnUzA5Q2REazJxZw&q=https%3A%2F%2Fwatchpeopledie.tv%2Fh%2Fselfharm%2Fpost%2F24762%2Fknife-vag" },
+  L: { word: "Living Mexico", link: "https://elblogdelnarco.com/2018/07/26/video-horripilante-donde-sicarios-del-mayo-zambada-le-sacaron-el-corazon-a-un-sujeto-y-a-otro-lo-dec/" },
+  L1: { word: "LiveGore", link: "https://www.livegore.com" },
+  M: { word: "Monkey", link: "https://example.com/monkey" },
+  N: { word: "Naver", link: "https://www.naver.com" },
+  O: { word: "Octopus", link: "https://example.com/octopus" },
+  P: { word: "Penguin", link: "https://example.com/penguin" },
+  Q: { word: "Quokka", link: "https://example.com/quokka" },
+  R: { word: "Rabbit", link: "https://example.com/rabbit" },
+  S: { word: "sponsored by adidas", link: "https://www.vidlii.com/watch?v=yLDszwQxqvr" },
+  T: { word: "Twitter", link: "https://www.twitter.com" },
+  U: { word: "Ukraine 21", link: "https://watchpeopledie.tv/h/beating/post/24683/3-guys-1-hammer-theync-and" },
+  V: { word: "Vulture", link: "https://example.com/vulture" },
+  W: { word: "Whale", link: "https://example.com/whale" },
+  X: { word: "X Video", link: "https://www.xvideo.com" },
+  Y: { word: "Youtube", link: "https://www.youtube.com" },
+  Y1: { word: "Yadong Korea", link: "https://www.yako.red" },
+  Z: { word: "Zebra", link: "https://example.com/zebra" }
 };
 
-// 알파벳 버튼 클릭 시 검색
 function searchByLetter(letter) {
   const searchResults = document.getElementById('search-results');
-  searchResults.innerHTML = ''; // 검색 결과 초기화
-  const query = letter.toUpperCase();
+  searchResults.innerHTML = '';  // 검색 결과 초기화
 
-  let found = false;
-
+  // 모든 키를 순회하며 입력한 문자로 시작하는 항목 검색
   Object.keys(words).forEach(key => {
-    if (key.startsWith(query)) {
+    if (key.startsWith(letter)) {
       const { word, link } = words[key];
       searchResults.innerHTML += `<a href="${link}" target="_blank">${word}</a><br/>`;
-      found = true;
     }
   });
 
-  if (!found) {
+  if (searchResults.innerHTML === '') {
     searchResults.textContent = '검색 결과가 없습니다.';
   }
 }
 
-// 단어 입력 후 검색
 function searchWord() {
   const input = document.getElementById('searchInput').value.toUpperCase();
   const searchResults = document.getElementById('search-results');
-  searchResults.innerHTML = ''; // 검색 결과 초기화
+  searchResults.innerHTML = '';  // 검색 결과 초기화
 
-  Object.keys(words).forEach(letter => {
-    const { word, link } = words[letter];
+  // 모든 키를 순회하며 입력한 단어로 시작하는 항목 검색
+  Object.keys(words).forEach(key => {
+    const { word, link } = words[key];
     if (word.toUpperCase().startsWith(input)) {
       searchResults.innerHTML += `<a href="${link}" target="_blank">${word}</a><br/>`;
     }
