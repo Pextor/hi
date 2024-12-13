@@ -25,6 +25,7 @@ const words = {
   Q: { word: "Quokka", link: "https://example.com" },
   R: { word: "Rabbit", link: "https://example.com/rabbit" },
   S: { word: "sponsored by adidas", link: "https://www.vidlii.com/watch?v=yLDszwQxqvr" },
+  S1: { word: "Shotgun him Self", link: "https://www.youtube.com/redirect?event=comments&redir_token=QUFFLUhqbE1TaDcyd0RVQlZ6UHN4b0x4cHdQNVpxTDhCZ3xBQ3Jtc0ttek1lS240ZC04eGFTeXBEazgyNFVVcWVWRzY1ekFDc2czYUwzMGZiVmNLMnFUcGpqWVpWY09fdnVKMHY0cTljTjNXOHktRjgwOE9wN3dLSXpHSkxuWGFSRTV1VlV2OU13RTdmWG5LVVY2Z0NRN1NmSQ&q=https%3A%2F%2Fwatchpeopledie.tv%2Fh%2Fsuicide%2Fpost%2F7325%2Fronnie-mcnutt-full-suicide-video" },
   T: { word: "Twitter", link: "https://www.twitter.com" },
   T: { word: "TheYNC", link: "https://theync.com" },
   U: { word: "Ukraine 21", link: "https://watchpeopledie.tv/h/beating/post/24683/3-guys-1-hammer-theync-and" },
