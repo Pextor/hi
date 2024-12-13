@@ -20,7 +20,7 @@ const words = {
   L1: { word: "LiveGore", link: "https://www.livegore.com" },
   M: { word: "Monkey", link: "https://example.com/monkey" },
   N: { word: "Naver", link: "https://www.naver.com" },
-  O: { word: "Octopus", link: "https://example.com/octopus" },
+  O: { word: "Onion Site Opener", link: "https://proxyium.com/website-unblocker" },
   P: { word: "PornHub", link: "https://pornhub.com" },
   Q: { word: "Quokka", link: "https://example.com" },
   R: { word: "Rabbit", link: "https://example.com/rabbit" },
