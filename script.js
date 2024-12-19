@@ -22,7 +22,7 @@ const words = {
   N: { word: "Naver", link: "https://www.naver.com" },
   O: { word: "Onion Site Opener", link: "https://proxyium.com/website-unblocker" },
   P: { word: "PornHub", link: "https://pornhub.com" },
-  P1: { word: "Paraguay", link: "https://www.youtube.com/redirect?event=backstage_event&redir_token=QUFFLUhqbU1sMHNOTVZWZU5QM2VQQ1RhWTVfZmlaNmFkd3xBQ3Jtc0tuQ2dVLVN0bUdadWc4Nmd0dzQ3MkV2Zy10WElFOEZNTll3Nm5FRHdKM3hScFczYlhMN2RJVmVWRXNuNXh5VTVnZ2NaTXVnaTRLelRYM0wxcmZhb0xnM1FlOFExTm5SYUEzUTdQNmlkN0NFcEp4aF9qcw&q=https%3A%2F%2Fwww.po-kaki-to.com%2Farchives%2F01770.html"
+  P1: { word: "Paraguay", link: "https://www.youtube.com/redirect?event=backstage_event&redir_token=QUFFLUhqbU1sMHNOTVZWZU5QM2VQQ1RhWTVfZmlaNmFkd3xBQ3Jtc0tuQ2dVLVN0bUdadWc4Nmd0dzQ3MkV2Zy10WElFOEZNTll3Nm5FRHdKM3hScFczYlhMN2RJVmVWRXNuNXh5VTVnZ2NaTXVnaTRLelRYM0wxcmZhb0xnM1FlOFExTm5SYUEzUTdQNmlkN0NFcEp4aF9qcw&q=https%3A%2F%2Fwww.po-kaki-to.com%2Farchives%2F01770.html" },
   Q: { word: "Quokka", link: "https://example.com" },
   R: { word: "Rabbit", link: "https://example.com/rabbit" },
   S: { word: "sponsored by adidas", link: "https://www.vidlii.com/watch?v=yLDszwQxqvr" },
