@@ -4,6 +4,7 @@ const words = {
   B1: { word: "Block Site Opener", link: "https://proxyium.com/website-unblocker" },
   C: { word: "CIVI", link: "https://civitai.com/models/7563/alice-nikke" },
   C1: { word: "Carro groce", link: "https://carro-groce.com/" },
+  C2: { word: "countryside", link: "https://www.youtube.com/redirect?event=backstage_event&redir_token=QUFFLUhqbWZxMUZZRnFobVFzYlozck9zanA4Y08wdGhlQXxBQ3Jtc0ttakRLWm1wbHlvMC1jWXNaUl83RkI5cVc1Nlo0YkFOZFhTSjY4MjktLXFzWjFTM0NQQ3dhZ2w1SXB3aW5KaV9MTWRiOUNPTGJXSU51RUZHSS1XMUxRQzRNQ1VzWXdCWjM0cW9DQWxLYnlPdDgtSlVzUQ&q=https%3A%2F%2Fwww.po-kaki-to.com%2Farchives%2F18672.html" },
   D: { word: "Daily Best", link: "https://ilbe.com" },
   D1: { word: "DuckDuckGo", link: "https://www.duckduckgo.com" },
   D2: { word: "Dcinside", link: "https://www.dcinside.com/" },
